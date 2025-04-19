@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  width: 100%;
+  background-color: #f2f3f5;
+}
+
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: block;
+  height: 35rem;
+  width: 400px;
+  padding: 35px;
+  background-color:white;
+  border-radius: 10px;
+}
+.container form{
+margin-top: -20px;
+}
+.container .text{
+  font-size: 25px;
+}
+.container form .data{
+  height: 50px;
+  width: 100%;
+  margin: 40px 0;
+}
+form .data label{
+  font-size: 20px;
+}
+form .data input{
+  height: 80%;
+  width: 100%;
+  padding-left: 10px;
+  font-size: 18px;
+  border-radius:10px;
+  border: 1px solid silver;
+}
+.btn{
+  margin-top: -5px;
+  background-color: #0165E1;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 85px;
+  border-radius: 5px;
+  border-color: #0165E1;
+  height: 2.5rem;
+  width: 10rem;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+}
+.btn:hover{
+  background-color:#0145E1;
+  border-color: #0145E1;
+}
+.atag{
+  margin-top: 10px;
+  text-align: center;
+}
+.atag a{
+  text-decoration: none;
+}
+form .data input:focus {
+  background-color: #f2f3f5;
+}
+.popup{
+  background-color:#f2f3f5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  padding:28px 50px;
+  border:1px solid #0145E1;
+  border-radius: 5px;
+  visibility: visible;
+  transition: transform 0.4s;
+}
+.open-popup{
+  visibility:visible;
+  transform: translate(-50%,-50%) scale(1);
+}
+.popup h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom:  10px;
+}
+.popup p{
+  margin-bottom: 10px;
+}
+.popup a{
+  background-color: #0145E1;
+  margin-left: 87px;
+  text-decoration: none;
+  color: #fff;
+  padding:2px 15px;
+  border-radius: 5px;
+}

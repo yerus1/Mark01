@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <title>Passbook</title>
+</head>
+<body>
+    <input type="hidden" id="status" value="success">
+   <div class="container">
+    <div class="text">Create an account</div>
+    <form action="#">
+        <div class="data">
+            <label for="name">Name</label>
+            <input type="text" class="name">
+        </div>
+        <div class="data">
+            <label for="email">Email</label>
+            <input type="text" class="email">
+        </div>
+        <div class="data">
+            <label for="phone">Phone</label>
+            <input type="text" class="phone">
+        </div>
+        <div class="data">
+            <label for="pass">Password</label>
+            <input type="text" class="pass">
+        </div>
+        <div>
+            <button class="btn" type="submit" onclick="openpopup()">Submit</button>
+        </div>
+        <div class="atag">Already have an account <a href="./login.html">Login</a></div>
+    </form>
+   <!-- </div>
+   <div class="popup" id="popup">
+    <h2>Thank you</h2>
+    <p>your details submitted successfully!</p>
+    <a href="#" onclick="closepop()">Ok</a>
+   </div> -->
+   <script>
+    let popup=document.getElementById("status");
+    if(popup=="success"){
+        function openpopup(){
+        popup.classList.add("open-popup");
+        }
+    }
+    // function openpopup(){
+    //     popup.classList.add("open-popup");
+    // }
+    // function closepop(){
+    //     popup.classList.remove("open-popup");
+    // }
+   </script>
+</body>
+</html>

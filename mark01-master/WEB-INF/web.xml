@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>MainServlet</servlet-name>
+        <servlet-class>Main</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MainServlet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+</web-app>
